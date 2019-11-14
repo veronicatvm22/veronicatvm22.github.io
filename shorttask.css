@@ -1,0 +1,75 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+html {min-width: 860px;}
+
+:root {
+    --ftheader-text: blue;
+    --ftheader-bg: #99cccc;
+    
+    --centmenu-text: maroon;
+    --centmenu-bg: #ffffff;
+} 
+
+#gridcontainer {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 200px auto auto;
+    grid-template-rows: 15% 75% 10%;
+    min-width: 860px;
+}
+
+header {
+    grid-column: 1/-1;
+    background-color: var(--ftheader-bg);
+    color: var(--ftheader-text);
+    border-top: 5px solid #ff9933;
+    border-bottom:5px solid #ff9933; 
+}
+
+h1{ padding-top: 2.5rem;
+    text-align: center;
+    font-size: 2.5rem;
+} 
+
+.needgardens {
+              text-indent: 1rem;
+              padding-top: 2rem;
+}
+
+.pmain {
+            padding: 1rem 10rem 0rem 1rem;
+    
+}
+
+footer {
+    grid-column: 1/-1;
+    background-color: var(--ftheader-bg);
+    color: var(--ftheader-text);
+    text-align: center;
+    padding-top: .25em;
+    border-top: 5px solid #ff9933;
+    border-bottom: 5px solid #ff9933;
+}
+
+#menu {
+    background-color: var(--centmenu-bg);
+    color: var(--centmenu-text);
+    border-right: 5px solid #ff9933;
+    border-top: none;
+    padding-top: 2em;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#leftlist {
+    list-style-type: none;   
+}
+
+#content {
+    background-color: var(--centmenu-bg);
+    color: var(--centmenu-text);
+}
+   
